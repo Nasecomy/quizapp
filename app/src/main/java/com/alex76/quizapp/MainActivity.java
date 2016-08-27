@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         setAnswers(round);
         setPrize(round);
 
+        setFinalAnswer();
     }
 
     //sets question text by polling Strings array
@@ -43,20 +44,16 @@ public class MainActivity extends AppCompatActivity {
         Resources res = getResources();
         if (round == 0) {
             String[] answersArray = res.getStringArray(R.array.answers0);
-            setButtons(answersArray);
         } else if (round == 1) {
             String[] answersArray = res.getStringArray(R.array.answers1);
-            setButtons(answersArray);
         } else if (round == 2) {
             String[] answersArray = res.getStringArray(R.array.answers2);
-            setButtons(answersArray);
         } else if (round == 3) {
             String[] answersArray = res.getStringArray(R.array.answers3);
-            setButtons(answersArray);
         } else if (round == 4) {
             String[] answersArray = res.getStringArray(R.array.answers4);
-            setButtons(answersArray);
         }
+        setButtons(answersArray);
     }
 
     //sets Strings values to the buttons. Again, probably can be written more economically.
@@ -71,9 +68,10 @@ public class MainActivity extends AppCompatActivity {
         bt3.setText(answersArray[2]);
         RadioButton bt4 = (RadioButton) findViewById(R.id.button4);
         bt4.setText(answersArray[3]);
+    }
 
-
-//sets OnClick listener to the button
+    public void setFinalAnswer() {
+        //sets OnClick listener to the button
         Button finalAnswer = (Button) findViewById(R.id.finalAnswer);
         finalAnswer.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -95,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
+    
     public void setPrize(int round) {
         Resources res = getResources();
         String[] prizes = res.getStringArray(R.array.prizes);
