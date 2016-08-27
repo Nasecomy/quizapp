@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="youplayfor">You are playing for:</string>
+
+
+    <string-array name="questions">
+        <item>Chicken of the sea is the brand of what?</item>
+        <item>Which fruit of vegetable is commonly carved as a Jack-o-lantern during Halloween celebrations?</item>
+        <item>What does U stand for in UFO?</item>
+        <item>What object is associated as a means of transportation for a witch?</item>
+        <item>Which journalist is the wife of Arnold Schwarzenegger?</item>
+    </string-array>
+
+
+    <string-array name="answers0">
+        <item>Shoes</item>
+        <item>Tuna</item>
+        <item>Chicken</item>
+        <item>Mayonnaise</item>
+
+    </string-array>
+
+    <string-array name="answers1">
+        <item>Eggplant</item>
+        <item>Squash</item>
+        <item>Cucumber?</item>
+        <item>Pumpkin</item>
+
+    </string-array>
+
+    <string-array name="answers2">
+        <item>Unidentified</item>
+        <item>Unusual</item>
+        <item>Ugly</item>
+        <item>Underwear</item>
+
+    </string-array>
+
+    <string-array name="answers3">
+        <item>Broomstick</item>
+        <item>Baseball Bat</item>
+        <item>Hockey Stick</item>
+        <item>Plunger</item>
+
+    </string-array>
+
+    <string-array name="answers4">
+        <item>Maria Shriver</item>
+        <item>Jane Pauley</item>
+        <item>Kitty Kelley</item>
+        <item>Serena Altschul</item>
+
+    </string-array>
+
+    <string-array name="prizes">
+        <item>$100</item>
+        <item>$200</item>
+        <item>$300</item>
+        <item>$500</item>
+        <item>$1,000</item>
+    </string-array>
+
+    <string-array name="rightAnswers">
+        <item>Tuna</item>
+        <item>Pumpkin</item>
+        <item>Unidentified</item>
+        <item>Broomstick</item>
+        <item>Maria Shriver</item>
+    </string-array>
+
+
+</resources>
